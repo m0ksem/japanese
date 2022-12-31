@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Hone",
+    "path": "./"
+  },
+  {
+    "name": "Basics",
+    "path": "basic",
+    "children": [
+      {
+        "name": "To be",
+        "path": "to-be"
+      },
+      {
+        "name": "Not to be",
+        "path": "not-to-be"
+      }
+    ]
+  }
+]
