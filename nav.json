@@ -18,6 +18,10 @@
       {
         "name": "Not to be",
         "path": "not-to-be"
+      },
+      {
+        "name": "Too",
+        "path": "too"
       }
     ]
   }
