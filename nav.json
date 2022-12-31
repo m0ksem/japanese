@@ -1,7 +1,11 @@
 [
   {
     "name": "Hone",
-    "path": "./"
+    "path": ""
+  },
+  {
+    "name": "Alphabet",
+    "path": "alphabet"
   },
   {
     "name": "Basics",

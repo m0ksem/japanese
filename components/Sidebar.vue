@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <NuxtLink v-for="item in items" :to="item.path">
+    <NuxtLink v-for="item in items" :to="`/${item.path}`">
       <li class="nav__item">
         {{ item.name }}
       </li>
@@ -32,6 +32,8 @@
       list-style: none;
       padding: 1rem;
       border-radius: 1rem;
+      color: black;
+      text-decoration: none;
 
       &--acitve {
         background-color: #5e62e1;
