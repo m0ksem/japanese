@@ -51,6 +51,10 @@ const childActive = computed(() => {
 $border-radius: 1rem;
 $child-active-bg: #5e62e151;
 
+a {
+  text-decoration: none;
+}
+
 .sidebar-item {
   list-style: none;
   padding: 1rem;

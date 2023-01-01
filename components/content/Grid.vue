@@ -26,16 +26,20 @@ const getDefaultSlotText = (slot: Slot): string => {
   throw new Error("");
 };
 
+const getLengthJapanese = (str: string) => {
+  return str.replace(/[^\x20-\x7E]/g, "aa").length;
+};
+
 const table = computed(() => {
   const text = getDefaultSlotText(slots.default!);
 
   const rows = text.split("\n");
-  const table = rows.map((c) => c.split("|").filter(Boolean));
+  const table = rows.map((c) => c.split(/\||｜/).filter(Boolean));
 
   const withColSpans = table.map((row) => {
     return row.map((col, colIndex) => ({
       content: col.trim(),
-      colspan: col.length + 1, // +1 cuz "|" was removed 
+      colspan: getLengthJapanese(col) + 1, // +1 cuz "|" was removed 
     }))
   })
 

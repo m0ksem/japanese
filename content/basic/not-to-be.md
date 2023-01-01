@@ -9,3 +9,9 @@
   | You (object)|    | cat     | not to be                      |
   | You are not a cat                                           |
 ::
+
+::grid
+  ｜あ なた｜は｜猫　｜じやありません｜
+  ｜　　　 ｜　｜ねこ｜　　　　　　　｜
+  ｜a｜na｜ta｜  |     |             |
+::
